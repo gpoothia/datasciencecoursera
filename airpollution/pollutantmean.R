@@ -1,3 +1,5 @@
+#https://www.coursera.org/learn/r-programming/supplement/amLgW/programming-assignment-1-instructions-air-pollution
+
 pollutantmean <- function(directory, pollutant, id){
   setwd(directory)
   filenames <- system("ls .",intern=TRUE)
@@ -19,4 +21,4 @@ pollutantmean <- function(directory, pollutant, id){
 }
 
 setwd("/Users/gauravpoothia/code/repos/coursera-data-science/airpollution/")
-print(pollutantmean("specdata", "nitrate", 23))
+print(pollutantmean("specdata", "nitrate", 1:10))
